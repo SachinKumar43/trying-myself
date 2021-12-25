@@ -1,0 +1,598 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,100;1,300&display=swap');
+
+:root{
+    --blue:#0188DF ;
+    --black:#354046 ;
+}
+
+.career
+{
+    font-weight: bold;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 400;
+    transition: all .2s linear;
+}
+
+*::selection{
+    background: var(--black);
+    color: #fff;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden; 
+}
+
+body{
+    overflow-x: hidden;
+    background-color: #c8dce4;
+    background: url("background.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+header{
+    width: 100%;
+    position: fixed;
+    top:0; left: 0;
+    padding:2rem 1rem;
+    z-index: 1000;
+}
+
+header a{
+    color: var(--black)
+}
+
+header a:hover{
+    color: var(--blue);
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+header .container .logo{
+    font-size: 4rem;
+    margin-left: 2%;
+  }
+
+  header .container .logo span{
+    color:var(--blue);
+    font-size: 130%;
+  }
+
+  header .nav ul{
+      margin-right: 0 ;
+      padding: 0;
+      display: flex;
+      justify-content: space-between;
+      list-style-type: none;
+  }
+
+header .nav ul li{
+    margin: 0 2rem;
+}
+
+header .nav ul li a{
+    margin: 0 1rem;
+    font-size: 2rem;
+}
+
+.bar{
+    background-color: #0188DF;
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    left: 0%;
+    height: 3rem;
+    color:#fff;
+    font-size: 1.9rem;
+    text-align: justify;
+}
+
+/*
+.main{
+    top: 40%;
+    font-size: large;
+} */
+
+.careerimg1
+{
+    position: absolute;
+    top: 20%;
+    right: 70%;
+}
+
+.flexbox
+{
+    display: flex;
+    justify-content: center;
+    font-family: 'Adamina';
+}
+
+.flexbox-item
+{
+    margin: 10px;
+    border: 3px hidden black;
+    background-color: white;
+    font-family: 'Adamina';
+        border: 0px solid #ccc;
+        float: left;
+}
+
+        .flexbox-item:hover {
+            box-shadow: 0 0 50px rgba(17, 0, 255, 0.5); 
+        }
+
+.flexbox-item1
+{
+    width: 25%;
+    position: fixed;
+    top: 20%;
+    right: 72%;
+    min-height: 400px;
+    background-color: #d0dce4;
+    font-family: 'Adamina';
+}
+
+    .box
+    {
+        position: relative;
+        width: 100%;
+        min-height: 100px;
+        height: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: 0188DF;
+        overflow: hidden;
+        border-radius: 20px;
+    }
+
+    .box::before
+    {
+        content: '';
+        position: absolute;
+        height: 100px;
+        width: 140%;
+        background: linear-gradient(#0026ff,#d400d4);
+        animation: animate 4s linear infinite;
+    }
+
+.box::after
+{
+    content: '';
+    position: absolute;
+    inset: 5px;
+    background: #0188DF;
+    border-radius: 16px;
+}
+
+    @keyframes animate
+    {
+        0%
+        {
+            transform: rotate(0deg);
+        }
+        100%
+        {
+            transform: rotate(350deg);
+        }
+    }
+
+
+    .box h3
+    {
+        position: relative;
+        color: black;
+        z-index: 10;
+
+    }
+
+        .box_CurrentOpenings
+        {
+            position: relative;
+            border: 1px solid aliceblue;
+            width: 100%;
+            min-height: 100px;
+            height: 30%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background:aliceblue;
+            overflow: hidden;
+            border-radius: 20px;
+            background-color: #0188DF;
+        }
+
+        .box_Resume
+        {
+            position: relative;
+            border: 1px solid white;
+            width: 100%;
+            min-height: 100px;
+            height: 30%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background:aliceblue;
+            overflow: hidden;
+            border-radius: 20px;
+            background-color: #0188DF;
+            
+        }
+
+        .box_Touch
+        {
+            position: relative;
+            border: 1px solid white;
+            width: 100%;
+            min-height: 100px;
+            height: 30%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background:aliceblue;
+            overflow: hidden;
+            border-radius: 20px;
+            background-color: #0188DF;
+            
+        }
+
+
+    .flexbox-item1 h3
+    {
+        font-size: 45px;
+        font-family: 'Adamina';
+    }
+
+
+    .flexbox-item1 p
+    {
+        font-size: 30px;
+        color: white;
+        padding: 20px;
+    }
+
+
+.flexbox-item2
+{
+    width: 39%;
+    border-radius: 20px;
+    background-color: #0188DF;
+    position: fixed;
+    top: 20%;
+    right: 30%;
+    height: 700px;
+    overflow-x: hidden;
+    padding: 20px;
+}
+
+                        /* width */
+                        ::-webkit-scrollbar {
+                            width: 20px;
+                        }
+                        
+                        /* Track */
+                        ::-webkit-scrollbar-track {
+                            box-shadow: inset 0 0 10px #0026ff; 
+                            border-radius: 10px;
+                        }
+                        
+                        /* Handle */
+                        ::-webkit-scrollbar-thumb {
+                            background: white;
+                            border: black; 
+                            border-radius: 10px;
+                        }
+                        
+                        /* Handle on hover */
+                        ::-webkit-scrollbar-thumb:hover {
+                            background: aliceblue; 
+                        }
+
+            .flexbox-item2-part1
+            {
+                width: 100%;
+                height: 50px;
+                background: #0188DF;
+                color: black;
+                display: flex;
+                font-size: 40px;
+                justify-content: center;
+                align-items: center;
+                font-family: 'Adamina';
+
+            }
+
+                    .opening1
+                    {
+                        width: 100%;
+                        background: #0188DF;
+                        color: white;
+                        display: flex;
+                        justify-content: left;
+                        align-items: center;
+                        font-size: 25px;
+                    }
+
+                    .opening2
+                    {
+                        width: 100%;
+                        background: #0188DF;
+                        color: white;
+                        display: flex;
+                        justify-content: left;
+                        align-items: center;
+                        font-size: 25px;
+                    }
+
+                    .opening3
+                    {
+                        width: 100%;
+                        background: #0188DF;
+                        color: white;
+                        display: flex;
+                        justify-content: left;
+                        align-items: center;
+                        font-size: 25px;
+                    }
+
+                    .opening4
+                    {
+                        width: 100%;
+                        background: #0188DF;
+                        color: white;
+                        display: flex;
+                        justify-content: left;
+                        align-items: center;
+                        font-size: 25px;
+                    }
+
+
+            .flexbox-item2-part2
+            {
+                width: 100%;
+                height: 50px;
+                background: #0188DF;
+                color: black;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+            }
+
+            .part2text
+            {
+                background: #0188DF;
+                color: white;
+            }
+
+                    /*border lagaya tha but hata diya*/
+                    hr.new5 {
+                        border: 0px solid #0188DF;
+                        border-radius: 5px;}
+
+
+                    label
+                    {font-size: 25px;}
+
+                    input[type=text] 
+                    {
+                        width: 100%;
+                        padding: 12px 20px;
+                        margin: 8px 0;
+                        box-sizing: border-box;
+                        border: none;
+                        background: #0188DF;
+                        color: white;
+                        font-size: 25px;
+                    }
+
+                    input[type=file]::file-selector-button {
+                        border: 2px solid #6c5ce7;
+                        padding: .2em .4em;
+                        border-radius: .2em;
+                        background-color: #a29bfe;
+                        transition: 0.5s;
+                        font-size: 25px;
+                      }
+                      
+                      input[type=file]::file-selector-button:hover {
+                        background-color: aliceblue;
+                        border: 2px solid aliceblue;
+                        font-size: 25px;
+                      }
+
+                      /*border lagaya tha but hata diya*/
+                      hr.new6 {
+                        border: 0px solid #0188DF;
+                        border-radius: 5px;}
+
+            .flexbox-item2-part3
+            {
+                width: 100%;
+                height: 50px;
+                background: #0188DF;
+                color: black;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+            }
+
+            .fieldname
+            {
+                font-size: 25px;
+                background: #0188DF;
+
+                        color: white;
+            }
+
+            .Experience
+            {
+                font-size: 25px;
+                background: #0188DF;
+                        color: white;
+            }
+
+            input[type=submit]
+            {
+                background-color: white;
+                color: #0188DF;
+                text-align: center;
+                border: 5px;
+                color: white;
+                padding: 16px 32px;
+                text-decoration: none;
+                margin: 4px 2px;
+                cursor: pointer;}
+            
+            .submit{
+                text-align: center;
+            }
+            
+
+    .flexbox-item2 h3
+    {
+        font-size: 35px;
+        font-family: 'Adamina';
+    }
+    .part3text
+    {
+        background: #0188DF;
+                        color: white;
+    }
+
+    
+
+
+
+
+.flexbox-item3
+{
+    width: 25%;
+    border-radius: 20px;
+    position: fixed;
+    background: #0188DF;
+                color: white;
+                font-family: 'Adamina';
+    top: 20%;
+    right: 2%;
+    min-height: 300px;
+    padding: 20px;
+}
+
+
+            .flexbox-item3 h3
+            {
+                width: 100%;
+                height: 50px;
+                border-radius: 20px;
+                background: #0188DF;
+                color: black;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 35px;
+                font-family: 'Adamina';
+            }
+
+            .select1
+            {
+                font-size: 25px;
+                background: #0188DF;
+                color: white;
+                font-family: 'Adamina';}
+                
+
+            .select2
+                {
+                    font-size: 25px;
+                    background: #0188DF;
+                color: white;
+                font-family: 'Adamina';}
+
+                    textarea {
+                        width: 100%;
+                        height: 150px;
+                        padding: 12px 20px;
+                        box-sizing: border-box;
+                        font-family: 'Adamina';
+                        border: 2px solid white;
+                        border-radius: 20px;
+                        background: #0188DF;
+                color: white;
+                        font-size: 20px;
+                        resize: none;
+                      }
+
+
+                      input[type=submit]
+                      {
+                          background-color: white;
+                          
+                          border: 2px solid black;
+                          border-radius: 0px 20px 0px 20px;
+                          color: #354046;
+                          padding: 16px 32px;
+                          text-decoration: none;
+                          margin: 4px 2px;
+                          font-size: 25px;
+                          cursor: pointer;}
+                          
+
+    .flexbox-item3 p
+    {
+        font-size: 25px;
+        font-family: 'Adamina';
+    }
+
+        /*slideshow*/
+        .careerpics
+        {
+            display: none;
+            position: absolute;
+            top: 100%;
+            right: 2%;
+        }
+
+        /*bottom left corner doctor scroll thing*/
+        .doctorpic1
+        {
+            position: absolute;
+            top: 100%;
+            right: 88%;
+        }
+
+
+            .animate__animated.animate__slideInDown {
+                --animate-duration: 3s;
+            }
+
+          .animate__animated.animate__fadeInLeft {
+            --animate-duration: 2s;
+          }
+
+          .animate__animated.animate__zoomIn {
+            --animate-duration: 2s;
+          }
+
+          .animate__animated.animate__fadeInRight {
+            --animate-duration: 2s;
+          }
